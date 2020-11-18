@@ -10,7 +10,7 @@ export default createGlobalStyle`
   }
 
   body, input, button {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Nunito', sans-serif;
   }
 
   a { text-decoration: none; }
