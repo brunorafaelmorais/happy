@@ -7,7 +7,6 @@ export const Container = styled.div`
   min-height: 100vh;
   background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
   color: #fff;
-
   display: flex;
   align-items: center;
 
@@ -27,9 +26,20 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
 
-  .left-content > .content {
+    > main > h1 {
+      font-size: 80px;
+      line-height: 72px;
+      font-weight: 900;
+      margin-top: 80px;
+    }
+
+    > main > p {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 34px;
+      margin-top: 32px;
+    }
   }
 
   .right-content {
@@ -38,56 +48,30 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: flex-end;
 
-    > .location-box {
+    > header {
       flex: 1 1;
-    }
-  }
-
-  .big-title {
-    font-size: 80px;
-    line-height: 72px;
-    font-weight: 900;
-    margin-top: 80px;
-  }
-
-  .sub-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 34px;
-    margin-top: 32px;
-  }
-
-  .location-box {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-
-    > .city {
-      font-weight: 900;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
       font-size: 24px;
       line-height: 34px;
     }
 
-    > .state {
-      font-size: 24px;
-      line-height: 34px;
-    }
-  }
+    > a {
+      width: 80px;
+      height: 80px;
+      background: #ffd666;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8d734b;
+      transition: all 0.2s;
 
-  .arrow-button {
-    width: 80px;
-    height: 80px;
-    background: #ffd666;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #8d734b;
-    transition: all 0.2s;
-
-    &:hover {
-      background-color: #96feff;
-      color: #15c3d6;
+      &:hover {
+        background-color: #96feff;
+        color: #15c3d6;
+      }
     }
   }
 `;

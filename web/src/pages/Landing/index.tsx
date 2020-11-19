@@ -11,22 +11,22 @@ const Landing: React.FC = () => {
     <Container>
       <main>
         <div className="left-content">
-          <Link to="/">
-            <img src={Logo} alt="Happy Logo" />
-          </Link>
+          <header>
+            <Link to="/">
+              <img src={Logo} alt="Happy Logo" />
+            </Link>
+          </header>
 
-          <div className="content">
-            <h1 className="big-title">Leve felicidade para o mundo</h1>
-            <p className="sub-title">
-              Visite orfanatos e mude o dia de muitas crianças.
-            </p>
-          </div>
+          <main>
+            <h1>Leve felicidade para o mundo</h1>
+            <p>Visite orfanatos e mude o dia de muitas crianças.</p>
+          </main>
         </div>
         <div className="right-content">
-          <div className="location-box">
-            <span className="city">Rio do Sul</span>
-            <span className="state"> Santa Catarina</span>
-          </div>
+          <header>
+            <strong>Rio do Sul</strong>
+            <span> Santa Catarina</span>
+          </header>
           <Link to="/locations" className="arrow-button">
             <FiArrowRight size={32} />
           </Link>
